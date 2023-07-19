@@ -1,0 +1,340 @@
+:root {
+  --a-color: #357b70;
+  --a-visited-color:#05676e;
+  --a-focushover-color:#ff0000;
+  --a-active-color:#000980;
+  --h-color: #800080;
+  --dark-grey: #2b2b2b;
+  --body-background-color: #F5F5F5;
+  --button-secondary-background-color: #e0b354;
+  --button-secondary-color: #2b2b2b;
+  --profile-span-backgroundcolor:#2b2b2b;
+  --profile-span-color: white;
+  --project-list-items-backgroundcolor:lightgray;
+  --button-visited-color:white;
+  --button-backgroundcolor: #357b70;
+  --button-color:white;
+  --color-change0p:#edc655;
+  --color-change50p:#fcffad;
+  --color-change100p:#f76414;
+  --thead-backgroundcolor: purple;
+  --thead-color:white;
+  --maxwidth-blocs: 700px;
+  --maxsize-keyframes: 750px;
+  --minsize-keyframes: 500px;
+  --minsize-font:400;
+  --maxsize-font:700;
+  --standard-spacing:20px;
+}
+body {
+    /*background color #F5F5F5
+    foreground color #4A4A4A
+    contrast ratio: 8.12:1 
+    text font: roboto ital 400 from google fonts*/
+
+    background-color: var(--body-background-color);
+    font-family: 'Roboto:ital', sans-serif;
+    font-weight: var(--minsize-font);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: var(--maxsize-font);
+    color: var(--h-color);
+  
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: var(--maxsize-font);
+    color: var(--h-color);
+ 
+
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: var(--maxsize-font);
+    color: var(--h-color);
+}
+
+footer {
+  color: var(--h-color);
+    font-style: italic;
+    }
+
+a {
+color:var(--a-color);
+}
+
+a:visited {
+    /* visited link */
+   color: #05676e ;
+}   
+
+a:hover , a:focus {
+    /* No underlining when hovering over a link and displaying in red*/
+    text-decoration: none;
+    color: var(--a-focushover-color);
+}
+
+a:active {
+      /* selected link */
+  color: var(--a-active-color);
+}
+
+  .button_secondary{
+   
+    background-color: var(--button-secondary-background-color);
+    color: var(--button-secondary-color);
+    
+  }
+
+  .navigation-list__item--active {
+    text-decoration: none;
+  }
+
+ .profile__portrait{
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+ } 
+
+ .profile{
+  max-width: var(--maxwidth-blocs);
+  margin: 0 auto;
+ }
+ .page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+ }
+
+ * {
+  box-sizing:border-box
+ }
+
+ .page-header {
+    display: flex;
+    width: 100%;
+    padding: var(--standard-spacing);
+ }
+
+ /* seems to work only on the nav tag? the logo width is not ajusted to 200px*/
+
+ .page-header__item {
+ /* flex-basis: 200px;
+ flex-grow: 0;
+ flex-shrink: 1; */
+
+ flex: 0 1 200px;
+
+ }
+
+ /*overwriting the child <img> width to 200px seems to work on child pseudo-selector
+ why not working with the previous bloc? */
+ 
+ .page-header__item:first-child{
+  width: 200px;
+ }
+
+ .page-header__item:last-child {
+    flex-grow: 1;
+    text-align:  right;
+ }
+
+ .navigation-list{
+ list-style-type:none ;
+  }
+
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .profile span {
+    color:var(--profile-span-color);
+    background-color: var(--profile-span-backgroundcolor);
+  }
+  
+  /* grid fallback*/
+  .project-list__item{
+    display: inline-block;
+    width:33%;
+  }
+
+  /*end grid fallback*/
+  @supports(display: grid){
+
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: var(--standard-spacing);
+    margin: var(--standard-spacing);
+  }
+
+  .project-list__item{
+
+    background-color: var(--project-list-items-backgroundcolor);
+    width: auto;
+    min-height: auto;
+    margin: 0;
+      }
+
+.project-list__item:last-child {
+  grid-column: 3/3;
+  grid-row: 1/3;
+}
+}
+
+@media all and (max-width: var(--minsize-keyframes)){
+  .project-list{
+    grid-template-columns: 1fr;
+   
+  }
+
+}
+
+@media all and (min-width: var(--minsize-keyframes)) and (max-width: var(--maxsize-keyframes)){
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  
+  }
+
+}
+
+  @media all and (max-width: var(--maxsize-keyframes)){
+    .project-list{
+    
+      grid-gap: 10px;
+    }
+  
+    .project-list__item:last-child {
+      grid-column: auto / auto ;
+      grid-row: auto / auto;
+    }
+  
+     h1 {
+      font-size: 22px;
+    }
+  
+
+}
+
+/* As button is a "a tag" it will use the color defined in the rule set a:visited
+ so for button to have the correct color after the first clic, we must overwrite
+ that ruleset with .button:visited ruleset*/
+.button:visited {
+color: var(--button-visited-color);  
+}
+
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  background-color: var(--button-backgroundcolor);
+
+  /* this property will only apply the firt time when no clic is done on the link.
+  After that, the color of .button:visited rule set will be applied*/
+  color: var(--button-color);
+   text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: opacity 0,2s;
+}
+
+.button:hover, .button:focus{
+ /* lets the mouse appear as a hand when hovering over the button */
+ cursor: pointer;
+ /* reduces the opacity of the button to 80% */
+ opacity: 0.8; 
+}
+
+.about{
+  max-width: var(--maxwidth-blocs);
+  margin:auto;
+  text-align:center ;
+  
+}
+
+.hobbies-list{
+  list-style-type: none;
+}
+
+/* animate the color of the sun*/
+@keyframes color-change {
+  0% {
+    fill: var(--color-change0p);
+    transform: scale3d(2,2,2);
+  }
+  50% {
+    fill: var(--color-change50p);
+    transform: scale3d(1,1,1);
+  }
+  100% {
+    fill: var(--color-change100p);
+    transform: scale3d(0,0,0);
+  }
+
+}
+
+.sun, .halo {
+  animation-duration: 10s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+table{
+  margin-left: var(--standard-spacing);
+  margin-top: var(--standard-spacing);
+  
+}
+thead{
+  background-color: var(--thead-backgroundcolor);
+  color: var(--thead-color);
+ 
+     }
+
