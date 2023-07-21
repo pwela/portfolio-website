@@ -432,7 +432,7 @@ table{
   /* margin-left: var(--standard-spacing);
   margin-top: var(--standard-spacing); */
   margin: 20px auto;
-  border-spacing: 4px;
+  border-spacing: 4px; 
   
 }
 thead{
