@@ -237,7 +237,7 @@ a:active {
 
 /* As button is a "a tag" it will use the color defined in the rule set a:visited
  so for button to have the correct color after the first clic, we must overwrite
- that ruleset with .button:visited ruleset*/
+ that ruleset with .button:visited  ruleset*/
 .button:visited {
 color: var(--button-visited-color);  
 }

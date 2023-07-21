@@ -430,7 +430,7 @@ color: var(--button-visited-color);
 
 table{
   /* margin-left: var(--standard-spacing);
-  margin-top: var(--standard-spacing); */
+   margin-top: var(--standard-spacing); */
   margin: 20px auto;
   border-spacing: 4px; 
   
