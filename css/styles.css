@@ -26,6 +26,8 @@
   --maxsize-font:700;
   --standard-spacing:20px;
 }
+
+
 body {
     /*background color #F5F5F5
     foreground color #4A4A4A
@@ -44,14 +46,13 @@ h1 {
     font-size: 30px;
     font-weight: var(--maxsize-font);
     color: var(--h-color);
-  
+      
 }
 
 h2 {
     font-size: 24px;
     font-weight: var(--maxsize-font);
     color: var(--h-color);
- 
 
 }
 
@@ -124,6 +125,8 @@ a:active {
     display: flex;
     width: 100%;
     padding: var(--standard-spacing);
+    /* position: fixed; */
+    
  }
 
  /* seems to work only on the nav tag? the logo width is not ajusted to 200px*/
@@ -134,7 +137,7 @@ a:active {
  flex-shrink: 1; */
 
  flex: 0 1 200px;
-
+ 
  }
 
  /*overwriting the child <img> width to 200px seems to work on child pseudo-selector
@@ -175,8 +178,9 @@ a:active {
   .project-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: var(--standard-spacing);
-    margin: var(--standard-spacing);
+    grid-gap: 10px;
+    margin: 1-px;
+    
   }
 
   .project-list__item{
@@ -185,6 +189,10 @@ a:active {
     width: auto;
     min-height: auto;
     margin: 0;
+    padding: 0 var(--standard-spacing) var(--standard-spacing) var(--standard-spacing);
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(19, 15, 15, 0.3);
+    
       }
 
 .project-list__item:last-child {
@@ -220,7 +228,7 @@ a:active {
       grid-row: auto / auto;
     }
   
-     h1 {
+     h1, h2 {
       font-size: 22px;
     }
   
@@ -268,8 +276,13 @@ color: var(--button-visited-color);
   
 }
 
+.about__item:nth-child(2) {
+  text-align: justify;
+}
 .hobbies-list{
-  list-style-type: none;
+  /* list-style-type: none ; */
+  text-align:justify ;
+  list-style-position:inside ;
 }
 
 /* animate the color of the sun*/
@@ -328,13 +341,31 @@ color: var(--button-visited-color);
 }
 
 table{
-  margin-left: var(--standard-spacing);
-  margin-top: var(--standard-spacing);
+  /* margin-left: var(--standard-spacing);
+  margin-top: var(--standard-spacing); */
+  margin: 20px auto;
+  border-spacing: 4px;
   
 }
 thead{
   background-color: var(--thead-backgroundcolor);
   color: var(--thead-color);
- 
+    
+     }
+     th, td{
+      padding: 5px;
      }
 
+.visitor-form{
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+  /* text-align: center; */
+  margin: auto;
+}
+
+.main-contact{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
