@@ -469,3 +469,7 @@ thead{
       -ms-flex-align: center;
           align-items: center;
 }
+
+tr:hover{
+  background-color: var(--a-color)
+}
