@@ -5,7 +5,7 @@ I've created the HTML and CSS templates. I also ensured backward compatibility w
 
 ## live website URL:
 
-https://pwela.github.io/
+https://pwela.github.io/portfolio-website/
 
 <div>
 <img alt="App screenshoot" src="/assets/homepage.png"/>
