@@ -1,123 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> My Work </title>
-        <!--Adding page logo here-->
-        <link rel="shortcut icon" href="img/favicon-32x32.png">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Work</title>
+    <!--Adding page logo here-->
+    <link rel="shortcut icon" href="img/favicon-32x32.png" />
 
-        <!--Resetting browser ccs settings-->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--Resetting browser ccs settings-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
 
-       
-        <!--Adding Roboto Italic font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
-
-
-    </head>
-    <body>
+    <!--Adding Roboto Italic font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
+  <body>
     <!-- Adding header tag-->
-        <header class="page-header">
+    <header class="page-header">
+      <!--Adding header logo here-->
+      <a href="index.html">
+        <img class="page-header__item" src="img/logo.png" alt="logo" />
+      </a>
 
-    <!--Adding header logo here-->
-        <a href="index.html"> <img class="page-header__item" src="img/logo.png" alt="logo"> </a>
-    
-    <!-- Adding nav tag with Aria attributes-->
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                    </li>
-                    <li>
-                        <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active"> My Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+      <!-- Adding nav tag with Aria attributes-->
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+            >
+              My Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- Adding main tag-->
-        <main>
-            <h1>My Work</h1> 
-            
-            <div class="project-list">
-    <!--grid Items-->
-                <div class="project-list__item">
-                    <h2> My portfolio website</h2>
-                    <p>
-                        In this project I am fully realizing the website you are on actually. I've created the HTML and CSS templates. 
-                        I also ensured backward compatibility with the last two versions of most popular browsers. Actually working on the backend side.
-                    </p>
-                    <a href="#"> See project on GitHub</a>
-                </div>
+    <main>
+      <h1>My Work</h1>
 
-                <div class="project-list__item">
-                    <h2> Project 2</h2>
-                    <p>
-                        This is a sample text for project 2.
-                    </p>
-                    <a href="#"> See project on GitHub</a>
-                </div>
+      <div class="project-list">
+        <!--grid Items-->
+        <div class="project-list__item">
+          <h2>My portfolio website</h2>
+          <p>
+            In this project I am fully realizing the website you are on
+            actually. I've created the HTML and CSS templates. I also ensured
+            backward compatibility with the last two versions of most popular
+            browsers. Actually working on the backend side.
+          </p>
+          <a href="https://github.com/pwela/portfolio-website">
+            See project on GitHub</a
+          >
+        </div>
 
-                <div class="project-list__item">
-                    <h2> Project 3</h2>
-                    <p>
-                        This is a sample text for project 3.
-                    </p>
-                    <a href="#"> See project on GitHub</a>
-                </div>
+        <div class="project-list__item">
+          <h2>to-do-list</h2>
+          <p>
+            This is a To Do List app created using jQuery, html and CSS. The
+            user can add a new item to a list of items, cross out a completed
+            item, delet and reorder the list of items.
+          </p>
+          <a href="https://github.com/pwela/to-do-list-app">
+            See project on GitHub</a
+          >
+        </div>
 
-                <div class="project-list__item">
-                    <h2> Project 4</h2>
-                    <p>
-                        This is a sample text for project 4.
-                    </p>
-                    <a href="#"> See project on GitHub</a>
-                </div>
+        <div class="project-list__item">
+          <h2>Pokedex Application</h2>
+          <p>
+            This app displays a list of pokemon loaded data from an external
+            API. It uses a complex UI pattern, a modal, for details or touch
+            interactions to display pokemon details.
+          </p>
+          <a href="https://github.com/pwela/pokedex-app">
+            See project on GitHub</a
+          >
+        </div>
 
-                <div class="project-list__item">
-                    <h2> Project 5</h2>
-                    <p>
-                        This is a sample text for project 5.
-                    </p>
-                    <a href="#"> See project on GitHub</a>
-                </div>
+        <div class="project-list__item">
+          <h2>Movie REST API</h2>
+          <p>
+            This app is a server-side component of a “movies” web application (a
+            REST-API) developped with nodejs, express and MongoDB. The web
+            application will provide users with access to information about
+            different movies, directors, and genres. Users will be able to sign
+            up, update their personal information, and create a list of their
+            favorite movies. The API is be hosted on heroku.
+          </p>
+          <a href="https://github.com/pwela/movie_api">
+            See project on GitHub</a
+          >
+        </div>
 
-                <div class="project-list__item">
-                    <h2> Project 6</h2>
-                    <p>
-                        This is a sample text for project 6.
-                    </p>
-                    <a href="#"> See project on GitHub</a>
-                </div>
+        <div class="project-list__item">
+          <h2>myPrime-client (React)</h2>
+          <p>
+            This project goal was to build a client SPA allowing user to
+            interact with movies and user preferences on a movie client-server
+            application. This app is hosted on netlify. This REACT app works in
+            combination with movie_api, a server-side app hosted on heroku.
+          </p>
+          <a href="https://github.com/pwela/myPrime-client">
+            See project on GitHub</a
+          >
+        </div>
 
-            </div>
-        </main>
+        <div class="project-list__item">
+          <h2>Event application (meet App)</h2>
+          <p>
+            This is a serverless progressive web application (PWA) built with
+            React and using a test driven developemnt technique (TDD). It is
+            based on React, AWS LAmbda and Google calendar API.
+          </p>
+          <a href="https://github.com/pwela/meet"> See project on GitHub</a>
+        </div>
+        <div class="project-list__item">
+          <h2>Chat Application (React native)</h2>
+          <p>
+            This is Chat app (similar to WhatsApp) for mobile devices built
+            using react native. It allows the user to send messages, images, and
+            location. Tha app is built using React Native and google firebase.
+          </p>
+          <a href="https://github.com/pwela/ChatApp"> See project on GitHub</a>
+        </div>
+        <div class="project-list__item">
+          <h2>myPrime-client (Angular)</h2>
+          <p>
+            This is a VOD client application developped using Angular and
+            material design. This apps works in combination with movie_api, a
+            server-side app hosted on heroku. You can find all the details
+            related to the api in my GitHub repository.
+          </p>
+          <a href="https://github.com/pwela/MyPrime_angular_client">
+            See project on GitHub</a
+          >
+        </div>
+      </div>
+    </main>
     <!-- Adding footer tag-->
-        <footer class="page-footer">
-            <p> Find me on </p>
-            <div class="social-media">
-                <!-- Githut logo -->
-                <a href="https://github.com/pwela" target="_blank"><img src="img/github_icon.svg" alt="GitHubLogo"></a>
-                <!-- Twitter logo -->
-                <a href="https://twitter.com/KillPhil237?t=GrGtPRDuQHv9NsycygcCoA&s=09"> <img src="img/twitter_icon.svg" alt="Twiterlogo"></a>
-                <!-- LinkedIn logo-->
-                <a href="https://www.linkedin.com/in/nyantcha-w-philippe/" target=" _blank"> <img src="img/linkedin_icon.svg" alt="LinkedInlogo"> </a>
-                
-            </div>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <!-- Githut logo -->
+        <a href="https://github.com/pwela" target="_blank"
+          ><img src="img/github_icon.svg" alt="GitHubLogo"
+        /></a>
+        <!-- Twitter logo -->
+        <a href="https://twitter.com/KillPhil237?t=GrGtPRDuQHv9NsycygcCoA&s=09">
+          <img src="img/twitter_icon.svg" alt="Twiterlogo"
+        /></a>
+        <!-- LinkedIn logo-->
+        <a
+          href="https://www.linkedin.com/in/nyantcha-w-philippe/"
+          target=" _blank"
+        >
+          <img src="img/linkedin_icon.svg" alt="LinkedInlogo" />
+        </a>
+      </div>
+    </footer>
 
-        
-        </footer>
-    
     <!--Adding tota11y script-->
-        <script src="js/tota11y.min.js"></script>
-    </body>
+    <script src="js/tota11y.min.js"></script>
+  </body>
 </html>
