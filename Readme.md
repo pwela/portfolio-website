@@ -21,7 +21,7 @@ https://pwela.github.io/
 6. Business Analysis
 7. Realease management
 
-# Programming languages
+# Programming languages used
 
 - HTML
 - CSS
@@ -30,4 +30,3 @@ https://pwela.github.io/
 
 - styelint
 - git / github
--
