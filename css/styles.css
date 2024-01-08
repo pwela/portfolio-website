@@ -172,7 +172,7 @@ nav {
   width: 100%;
   top: 0;
   left: 0;
-  height: auto;
+  height: 75px;
   position: fixed;
   overflow: hidden;
   text-align: right;
@@ -186,7 +186,7 @@ nav > a {
 }
 
 .main_home {
-  margin-top: 15%;
+  margin-top: 80px;
 }
 /*overwriting the child <img> width to 200px seems to work on child pseudo-selector
  why not working with the previous bloc? */
