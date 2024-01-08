@@ -265,14 +265,15 @@ nav > a {
   .project-list {
     grid-template-columns: 1fr;
   }
-  .project-item__picture {
-    align-content: ;
-  }
+
   .project-list__item:last-child {
     grid-column: 1/1;
   }
   .project-links {
     flex-direction: column;
+  }
+  .welcometext {
+    clear: both;
   }
 }
 
