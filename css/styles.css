@@ -172,7 +172,7 @@ nav {
   width: 100%;
   top: 0;
   left: 0;
-  height: 8%;
+  height: auto;
   position: fixed;
   overflow: hidden;
   text-align: right;
