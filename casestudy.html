@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyPrime Case Study</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <!--Adding Roboto Italic font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Adding header tag-->
+    <header class="page-header">
+      
+      <a href="index.html">
+        <h3> &#60; &#60; Back </h3>
+      </a>
+
+    </header>
+
+    <!-- Adding main tag-->
+    <main>
+      <div class="profile casestudy">
+        <h1 class="about__item">MyPrime project case study</h1>
+
+        <div>
+          <img
+            src="assets/movieapphomepage.png"
+            class="casestudy__right"
+            alt="movie app homepage"
+          />
+          <div>
+            <h3>Problem:</h3>
+            <p>
+              How could people have access to detailed information of movies
+              they are interested in and select which movie they like?
+            </p>
+            <h3>Goal:</h3>
+            <p>
+              Create a full stack of a movie application (front end and back
+              end) that will allow users to have detailed information on movies,
+              create an account and store their favorite movies. This project
+              was created as a part of CareerFoundry’s Web development program.
+            </p>
+            <h3>Role:</h3>
+            <p>Web Developer</p>
+            <h3>Duration:</h3>
+            <p>7 weeks</p>
+            <h3>Tools:</h3>
+            <p>
+              MongoDB, Express, React, Nodejs, Boostrap, Heroku, Mongoose, Redux, Netlify, Postman
+            </p>
+          </div>
+        </div>
+
+        <div class="clear">
+          <h2>Building process</h2>
+          <div>
+            <h3>Solution Architecture</h3>
+            <p>
+              The first step was to analyze the requirements to identify all the
+              key features of my application. Based on the key features, I was
+              therefore able to define the web application architecture. This
+              step helped me to identify what to include at Client level
+              (views), Server level (server type and API endpoints), Business
+              logic (models) and finally the Data layer (Database type).
+            </p>
+          </div>
+          <div>
+            <h3>Server side - API</h3>
+            <img
+              src="assets/apicode.png"
+              class="casestudy__left"
+              alt="API code screenshoot"
+            />
+            <div>
+              <p>
+                After defining the architecture, I started working on the API to
+                make sure that I will have all the endpoints. I chose to dive on
+                the API first because the type of data available could impact
+                the rendering of the front-end part of the application. The API
+                was built using Node.JS and Express.
+              </p>
+              <p>
+                After building the API, I then created mock data and tested my
+                API endpoints using POSTMAN to send requests and analyze the
+                results.
+              </p>
+            </div>
+          </div>
+          <div class="clear">
+            <h3>Client side</h3>
+            <p>
+              With the API ready, I decided to dive on the frontend side of the
+              application. I chose the frontend before the database because with
+              the mock data, it will be easier to change the data structure than
+              modifying the real database architecture in case I faced any
+              technical constraint. The first step in the front end was to
+              define in detail which feature will go in which view (home screen,
+              movie view, user profile view, favorite movie view, etc) and then
+              to build each view separately for easy testing. After that I
+              integrated all the views together. The frontend was built with
+              React and Redux. To distinguish my application with the existing
+              solutions, I made two major design choices:
+              <ol>
+                <li>Combine the “Add favorite” and “Remove favorite” button in one, so that the users can directly know if a movie is already in his favorite. </li>
+                <li>Add the “favorite movie” view directly in the “user profile” view to reduce the number of pages and simplify navigation for the users.</li>
+              </ol>
+            </p>
+            <div class="clientside__pictures">
+              <img src="assets/fav_unfav.png"  class="casestudy__embedded"  alt="Add remove favorite movie"/>
+            <img src="assets/userprofile.png" class="casestudy__embedded" alt="user profile"/>
+            <img src="assets/moviedetails.png" class="casestudy__embedded userprofile__picture" alt="movie details"/>
+            </div>
+          </div>
+          <div>
+            <h3> Server side: Database</h3>
+            <p> The database was quite straightforward to build, I chose to go for a non relational database because it is the best choice to store and organize various types of dataset side by side, this flexibility compared to relational databases was perfect for the type of information to store for this project. MongoDB was the one. Here I also chose to hash users’ password for better security. </p>
+          </div>
+          <div>
+            <h3> Hosting</h3>
+            <p> The last step (and not the least) was to host each side of the application online so that it can be accessible from everywhere. Netlify was chosen for the front end, Heroku for the API, and Mongoose for the database. </p>
+          </div>
+          <div>
+            <h3> Collaboration and documentation</h3>
+            <p> It is important to mention that project documentation was generated for the API during the development process to ensure proper use by other potential developers.</p>
+          <img src="assets/API.png" class="clientside__pictures"  alt="API documentation picture"/>
+          </div>
+          <div>
+            <h3>Challenges</h3>
+            <p> My main challenge was to add the login feature using Express and Nodejs, it took me several hours to understand how they work. After one session with my mentor and reading the documentation he provided to me, I was finally able to solve this issue.</p>
+          </div>
+          <div>
+            <h3> Retrospective:</h3>
+            <p>The goal of this project was to build from scratch the front-end and back-end parts of an application. I enjoyed building the API as well connecting it to the database. This project helped me to master the full stack development process and gave me a good overview of relational and non-relational databases. I really enjoyed working with React.</p>
+          </div>
+          <div>
+            <h3>Future improvements </h3>
+            <ul>
+              <li> Add a notify user feature that send an email to the user when a movie is added to the database </li>
+              <li> Add a featured section to display recently added/featured movies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="index.html">
+        <h3> &#60; &#60; Back </h3>
+      </a>
+    </main>
+
+    <!--Adding footer tag-->
+
+    <footer class="page-footer">
+      <h3>Find me on</h3> 
+      <div class="social-media">
+        <!-- Github logo -->
+        <a href="https://github.com/pwela" target="_blank"
+          ><img src="img/github_icon.svg" alt="GitHubLogo"
+        /></a>
+        <!-- Twitter logo -->
+        <a
+          href="https://twitter.com/KillPhil237?t=GrGtPRDuQHv9NsycygcCoA&s=09"
+          target="_blank"
+        >
+          <img src="img/x.svg" alt="X logo" height="32" width="32"
+        /></a>
+        <!-- LinkedIn logo-->
+        <a
+          href="https://www.linkedin.com/in/nyantcha-w-philippe/"
+          target="_blank"
+        >
+          <img src="img/linkedin_icon.svg" alt="LinkedInlogo"
+        /></a>
+        <a href="https://medium.com/@p.nyantcha" target="_blank">
+          <img src="img/medium.svg" alt="medium logo" height="32" width="32" />
+        </a>
+      </div>
+    </footer>
+    <!--Adding tota11y script-->
+    <!-- <script src="js/tota11y.min.js"></script> -->
+  </body>
+</html>

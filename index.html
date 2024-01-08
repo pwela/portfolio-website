@@ -26,47 +26,45 @@
     />
 
     <!-- Importing CSS file -->
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
     <!-- Adding header tag-->
     <header class="page-header">
-      <!--Adding header logo here-->
-      <a href="index.html">
-        <img class="page-header__item" src="img/logo.png" alt="logo" />
-      </a>
-
       <!-- Adding nav tag with Aria attributes-->
-      <nav class="main-navigation page-header__item">
+      <nav class="navbar">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
+            <a href="index.html" role="menuitem" class="navigation-list__item"
               >About Me</a
             >
           </li>
+
           <li>
-            <a href="work.html" role="menuitem" class="navigation-list__item">
+            <a href="#mywork" role="menuitem" class="navigation-list__item">
               My Work</a
             >
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
+            <a href="#contact" role="menuitem" class="navigation-list__item"
               >Contact</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="assets/Philippe_Nyantcha Resume.pdf"
+              role="menuitem"
+              class="navigation-list__item"
+              target="_blank"
+              >My Resume</a
             >
           </li>
         </ul>
       </nav>
     </header>
     <!-- Adding main tag-->
-    <main>
+    <main class="main_home">
       <div class="profile">
         <img
           src="img/philippe-nyantcha-800x800.png"
@@ -76,13 +74,18 @@
         <h1>Hello, welcome on my portfolio website!</h1>
         <p>
           My Name is Philippe Nyantcha. I am a
-          <span> &#60;web&#62; </span> developer with a strong background in
-          project management and business analysis. I am excited to pursue my
-          career as a web developer, combining my passion of building performant
-          web applications with my skills and experience of managing project and
-          product deliverables.
+          <span> &#60;web&#62; </span> developer based in Alberta, Canada. I
+          have a strong background retail automation and IT project management
+          that I have been practicing for more than 10 years. This gives me the
+          unique abilities to manage a product from scratch, including
+          requirement elicitations, development, project management, quality
+          assurance, deployment, and release management. I am excited to pursue
+          my career as a web developer, combining my passion of building
+          performant web applications with my skills and experience of managing
+          project and product deliverables. I am open to full time role, part
+          time role and volunteering as well. Please feel free to reach me out
+          at "p (dot) nyantcha (at) gmail (dot) com".
         </p>
-        <a href="work.html">Check out some of my code</a>
 
         <!-- Adding buttons
                 
@@ -94,11 +97,219 @@
                 </p>
     -->
       </div>
+
+      <div>
+        <h1 name="mywork" id="mywork">My Work</h1>
+
+        <div class="project-list">
+          <!--grid Items-->
+          <div class="project-list__item">
+            <h2>myPrime-client (React)</h2>
+            <p>
+              This app is a client single page application (SPA) allowing user
+              to interact with movies and user preferences on a movie
+              client-server application. This app is hosted on netlify. will
+              provide users with access to information about different movies,
+              directors, and genres. Users will be able to sign up, update their
+              personal information, and create a list of their favorite
+              movies.This app is built with REACT and works in combination with
+              movie_api, a server-side app hosted on heroku.
+            </p>
+            <img
+              class="project-item__picture"
+              src="./assets/myprime.png"
+              alt="myPrime app picture"
+            />
+            <div class="project-links">
+              <a href="https://github.com/pwela/myPrime-client" target="_blank">
+                See project on GitHub</a
+              >
+              <a href="casestudy.html" target="_top"> Case study</a>
+              <a href="https://myprime.netlify.app/" target="_blank"
+                >Visit live application</a
+              >
+            </div>
+          </div>
+          <div class="project-list__item">
+            <h2>myPrime-client (Angular)</h2>
+            <p>
+              This is a video on demand (VOD) client application developped
+              using Angular and google material design. This apps works in
+              combination with movie_api, a server-side app hosted on heroku.
+              You can find all the details related to the api in my GitHub
+              repository.
+            </p>
+            <img
+              class="project-item__picture"
+              src="./assets/myprime-angular.png"
+              alt="myprime-angular app picture"
+            />
+            <div class="project-links">
+              <a
+                href="https://github.com/pwela/MyPrime_angular_client"
+                target="_blank"
+              >
+                See project on GitHub</a
+              >
+              <a
+                href="https://pwela.github.io/MyPrime_angular_client/"
+                target="_blank"
+                >Visit live application</a
+              >
+            </div>
+          </div>
+
+          <div class="project-list__item">
+            <h2>Movie REST API</h2>
+            <p>
+              This app is a server-side component of a “movies on demand” web
+              application. The web application will provide users with access to
+              information about different movies, directors, and genres. Users
+              will be able to sign up, update their personal information, and
+              create a list of their favorite movies. This REST-API is
+              developped with nodejs, express and MongoDB. The API is be hosted
+              on heroku.
+            </p>
+            <a href="https://github.com/pwela/movie_api" target="_blank">
+              See project on GitHub</a
+            >
+          </div>
+
+          <div class="project-list__item">
+            <h2>Event application (meet App)</h2>
+            <p>
+              This app will allows users to search for a city and get a list of
+              events hosted in that city. It also displays two charts, one that
+              shows how many events will take place in each location (via a
+              scatterplot), and another that visualizes the popularity of event
+              genres (via a pie chart). This is a serverless progressive web
+              application (PWA) built with React and using a test driven
+              developemnt approach (TDD). It is based on React, AWS Lambda and
+              Google calendar API.
+            </p>
+            <img
+              class="project-item__picture"
+              src="./assets/meet.png"
+              alt="meet app picture"
+            />
+            <div class="project-links">
+              <a href="https://github.com/pwela/meet" target="_blank">
+                See project on GitHub</a
+              >
+              <a href="https://pwela.github.io/meet/" target="_blank"
+                >Visit live application</a
+              >
+            </div>
+          </div>
+
+          <div class="project-list__item">
+            <h2>to-do-list</h2>
+            <p>
+              This is a To Do List app created using jQuery, html and CSS. The
+              user can add a new item to a list of items, cross out a completed
+              item, delete and reorder the list of existing items.
+            </p>
+            <img
+              class="project-item__picture"
+              src="./assets/to-do-list.png"
+              alt="to-do-list picture"
+            />
+            <div class="project-links">
+              <a href="https://github.com/pwela/to-do-list-app" target="_blank">
+                See project on GitHub</a
+              >
+              <a href="https://pwela.github.io/to-do-list-app/" target="_blank"
+                >Visit live application</a
+              >
+            </div>
+          </div>
+          <div class="project-list__item">
+            <h2>Pokedex Application</h2>
+            <p>
+              This app displays a list of pokemon by loading data from an
+              external API. It uses a complex UI pattern, a modal, for details
+              or touch interactions to display pokemon details on user action
+              (click).
+            </p>
+            <img
+              class="project-item__picture"
+              src="./assets/pokedex.png"
+              alt="pokedex picture"
+            />
+            <div class="project-links">
+              <a href="https://github.com/pwela/pokedex-app" target="_blank">
+                See project on GitHub</a
+              >
+              <a href="https://pwela.github.io/pokedex-app/" target="_blank"
+                >Visit live application</a
+              >
+            </div>
+          </div>
+
+          <div class="project-list__item">
+            <h2>My portfolio website</h2>
+            <p>
+              In this project I am fully realizing the static website you are on
+              actually. I've created the HTML and CSS templates. I also ensured
+              backward compatibility with the last three versions of most
+              popular browsers.
+            </p>
+            <img
+              class="project-item__picture"
+              src="./assets/homepage.png"
+              alt="portfolio picture"
+            />
+            <div class="project-links">
+              <a
+                href="https://github.com/pwela/portfolio-website"
+                target="_blank"
+              >
+                See project on GitHub</a
+              >
+              <a href="" target="_blank">Visit live application</a>
+            </div>
+          </div>
+          <div class="project-list__item">
+            <h2>Chat Application (React native)</h2>
+            <p>
+              This is Chat app (similar to WhatsApp) for mobile devices built
+              using react native. It allows the user to send messages, images,
+              and location. Tha app is built using React Native and google
+              firebase.
+            </p>
+            <img
+              class="project-item__picture"
+              src="./assets/chat.jpg"
+              alt="chat app picture"
+            />
+            <div class="project-links">
+              <a href="https://github.com/pwela/ChatApp" target="_blank">
+                See project on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 id="contact" name="contact">Contact</h1>
+
+        <h2>
+          Want to talk? You cant reach out to me using the linkedIn, GitHub, X
+          and Medium details provided below!
+        </h2>
+      </div>
     </main>
     <!-- Adding footer tag-->
     <footer class="page-footer">
-      <p>Find me on</p>
+      <h3>Find me on</h3>
       <div class="social-media">
+        <!-- LinkedIn logo-->
+        <a
+          href="https://www.linkedin.com/in/nyantcha-w-philippe/"
+          target="_blank"
+        >
+          <img src="img/linkedin_icon.svg" alt="LinkedInlogo"
+        /></a>
         <!-- Github logo -->
         <a href="https://github.com/pwela" target="_blank"
           ><img src="img/github_icon.svg" alt="GitHubLogo"
@@ -110,13 +321,7 @@
         >
           <img src="img/x.svg" alt="X logo" height="32" width="32"
         /></a>
-        <!-- LinkedIn logo-->
-        <a
-          href="https://www.linkedin.com/in/nyantcha-w-philippe/"
-          target="_blank"
-        >
-          <img src="img/linkedin_icon.svg" alt="LinkedInlogo"
-        /></a>
+
         <a href="https://medium.com/@p.nyantcha" target="_blank">
           <img src="img/medium.svg" alt="medium logo" height="32" width="32" />
         </a>

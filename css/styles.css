@@ -57,6 +57,7 @@ h3 {
   font-size: 18px;
   font-weight: var(--maxsize-font);
   color: var(--h-color);
+  margin-bottom: 0;
 }
 
 footer {
@@ -66,11 +67,6 @@ footer {
 
 a {
   color: var(--a-color);
-}
-
-a:visited {
-  /* visited link */
-  color: #05676e;
 }
 
 a:hover,
@@ -85,6 +81,10 @@ a:active {
   color: var(--a-active-color);
 }
 
+p {
+  text-align: justify;
+}
+
 .button_secondary {
   background-color: var(--button-secondary-background-color);
   color: var(--button-secondary-color);
@@ -97,13 +97,51 @@ a:active {
 .profile__portrait {
   float: left;
   width: 250px;
-  margin-right: 40px;
   border-radius: 50%;
+  margin-right: 4%;
 }
 
+.casestudy__right {
+  float: right;
+  width: 50%;
+  margin-left: 4%;
+  max-height: 80%;
+}
+
+.casestudy__left {
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-right: 4%;
+}
+
+.casestudy__embedded {
+  width: 27%;
+  margin-right: 2%;
+}
+
+.userprofile__picture {
+  width: 40%;
+  margin-right: 0;
+}
+
+.clientside__pictures {
+  display: block;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
 .profile {
   max-width: var(--maxwidth-blocs);
   margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+.casestudy {
+  max-width: 95%;
 }
 .page-footer {
   clear: both;
@@ -117,33 +155,41 @@ a:active {
 }
 
 .page-header {
-  display: flex;
   width: 100%;
-  padding: var(--standard-spacing);
-  /* position: fixed; */
+  /* padding: var(--standard-spacing);
+  position: fixed;
+  overflow: hidden;
+  top: 0; */
 }
 
 /* seems to work only on the nav tag? the logo width is not ajusted to 200px*/
 
-.page-header__item {
+nav {
   /* flex-basis: 200px;
  flex-grow: 0;
  flex-shrink: 1; */
 
-  flex: 0 1 200px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 8%;
+  position: fixed;
+  overflow: hidden;
+  text-align: right;
+  background-color: white;
+  padding-right: 2%;
+  padding-bottom: 1%;
 }
 
+nav > a {
+  color: white;
+}
+
+.main_home {
+  margin-top: 15%;
+}
 /*overwriting the child <img> width to 200px seems to work on child pseudo-selector
  why not working with the previous bloc? */
-
-.page-header__item:first-child {
-  width: 200px;
-}
-
-.page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
-}
 
 .navigation-list {
   list-style-type: none;
