@@ -74,17 +74,17 @@
         <h1 class="welcometext">Hello, welcome on my portfolio website!</h1>
         <p>
           My Name is Philippe Nyantcha. I am a
-          <span> &#60;web&#62; </span> developer based in Alberta, Canada. I
-          have a strong background retail automation and IT project management
-          that I have been practicing for more than 10 years. This gives me the
-          unique abilities to manage a product from scratch, including
-          requirement elicitations, development, project management, quality
-          assurance, deployment, and release management. I am excited to pursue
-          my career as a web developer, combining my passion of building
-          performant web applications with my skills and experience of managing
-          project and product deliverables. I am open to full time role, part
-          time role and volunteering as well. Please feel free to reach me out
-          at "p (dot) nyantcha (at) gmail (dot) com".
+          <span> &#60;web&#62;</span> developer based in Alberta, Canada. I have
+          a strong background retail automation and IT project management that I
+          have been practicing for more than 10 years. This gives me the unique
+          abilities to manage a product from scratch, including requirement
+          elicitations, development, project management, quality assurance,
+          deployment, and release management. I am excited to pursue my career
+          as a web developer, combining my passion of building performant web
+          applications with my skills and experience of managing project and
+          product deliverables. I am open to full time role, part time role and
+          volunteering as well. Please feel free to reach me out at "p (dot)
+          nyantcha (at) gmail (dot) com".
         </p>
 
         <!-- Adding buttons
@@ -108,14 +108,15 @@
               myPrime-client (React)
             </h2>
             <p>
-              This app is a client single page application (SPA) allowing user
-              to interact with movies and user preferences on a movie
-              client-server application. This app is hosted on netlify. will
-              provide users with access to information about different movies,
+              This app is a client single page application (SPA) allowing users
+              to interact with movies and users' preferences on a movie
+              client-server application. This app is hosted on Netlify. It
+              provides users with access to information about different movies,
               directors, and genres. Users will be able to sign up, update their
               personal information, and create a list of their favorite
-              movies.This app is built with REACT and works in combination with
-              movie_api, a server-side app hosted on heroku.
+              movies.This app is built with React and works in combination with
+              <a href="#movieapi"> Movie REST API</a>, a server-side app hosted
+              on Heroku.
             </p>
             <img
               class="project-item__picture"
@@ -136,10 +137,10 @@
             <h2>myPrime-client (Angular)</h2>
             <p>
               This is a video on demand (VOD) client application developped
-              using Angular and google material design. This apps works in
-              combination with movie_api, a server-side app hosted on heroku.
-              You can find all the details related to the api in my GitHub
-              repository.
+              using Angular and Google material design. This apps works in
+              combination with <a href="#movieapi"> Movie REST API</a>, a
+              server-side app hosted on Heroku. You can find all the details
+              related to the API in my GitHub repository.
             </p>
             <img
               class="project-item__picture"
@@ -162,15 +163,15 @@
           </div>
 
           <div class="project-list__item">
-            <h2>Movie REST API</h2>
+            <h2 name="movieapi" id="movieapi">Movie REST API</h2>
             <p>
               This app is a server-side component of a “movies on demand” web
               application. The web application will provide users with access to
               information about different movies, directors, and genres. Users
               will be able to sign up, update their personal information, and
               create a list of their favorite movies. This REST-API is
-              developped with nodejs, express and MongoDB. The API is be hosted
-              on heroku.
+              developped with Nodejs, Express and MongoDB and endpoints were
+              tested with Postman. The API is hosted on Heroku.
             </p>
             <a href="https://github.com/pwela/movie_api" target="_blank">
               See project on GitHub</a
@@ -180,14 +181,15 @@
           <div class="project-list__item">
             <h2>Event application (meet App)</h2>
             <p>
-              This app will allows users to search for a city and get a list of
+              This app will allow users to search for a city and get a list of
               events hosted in that city. It also displays two charts, one that
               shows how many events will take place in each location (via a
               scatterplot), and another that visualizes the popularity of event
               genres (via a pie chart). This is a serverless progressive web
-              application (PWA) built with React and using a test driven
-              developemnt approach (TDD). It is based on React, AWS Lambda and
-              Google calendar API.
+              application (PWA) built with React, AWS Lambda and Google calendar
+              API. The test driven developement approach (TDD) was also followed
+              during the building process using Jest, Cumcumber and Puppeter for
+              testing.
             </p>
             <img
               class="project-item__picture"
@@ -205,9 +207,9 @@
           </div>
 
           <div class="project-list__item">
-            <h2>to-do-list</h2>
+            <h2>To-Do-List</h2>
             <p>
-              This is a To Do List app created using jQuery, html and CSS. The
+              This is a To-Do-List app created using jQuery, HTML and CSS. The
               user can add a new item to a list of items, cross out a completed
               item, delete and reorder the list of existing items.
             </p>
@@ -228,10 +230,10 @@
           <div class="project-list__item">
             <h2>Pokedex Application</h2>
             <p>
-              This app displays a list of pokemon by loading data from an
+              This app displays a list of Pokemons by loading data from an
               external API. It uses a complex UI pattern, a modal, for details
-              or touch interactions to display pokemon details on user action
-              (click).
+              or touch interactions to display a Pokemon's details on user
+              action (click).
             </p>
             <img
               class="project-item__picture"
@@ -251,10 +253,10 @@
           <div class="project-list__item">
             <h2>My portfolio website</h2>
             <p>
-              In this project I am fully realizing the static website you are on
-              actually. I've created the HTML and CSS templates. I also ensured
-              backward compatibility with the last three versions of most
-              popular browsers.
+              In this project, I am fully realizing the static website you are
+              on actually. I've created the HTML and CSS templates. I also
+              ensured backward compatibility with the last three versions of
+              most popular browsers.
             </p>
             <img
               class="project-item__picture"
@@ -274,10 +276,9 @@
           <div class="project-list__item">
             <h2>Chat Application (React native)</h2>
             <p>
-              This is Chat app (similar to WhatsApp) for mobile devices built
-              using react native. It allows the user to send messages, images,
-              and location. Tha app is built using React Native and google
-              firebase.
+              This is a chat app (similar to WhatsApp) for mobile devices built
+              using React Native and Google Firebase. It allows the user to send
+              text messages, images, audios and location.
             </p>
             <img
               class="project-item__picture"
@@ -296,8 +297,8 @@
         <h1 id="contact" name="contact">Contact</h1>
 
         <h3>
-          Want to talk? You cant reach out to me using the linkedIn, GitHub, X
-          and Medium details provided below on at "p (dot) nyantcha (at) gmail
+          Want to talk? You can reach out to me using the LinkedIn, GitHub, X
+          and Medium details provided below or at "p (dot) nyantcha (at) gmail
           (dot) com".
         </h3>
       </div>
